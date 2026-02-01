@@ -59,8 +59,8 @@ Entre **R$ 60 e R$ 180**, dependendo do que a pessoa já possui.
 ## 📚 Documentação Complementar
 
 - 🛡️ Guia de Sobrevivência: [Primeiros passos após conectar](./docs/guia-sobrevivencia.md)
-- 🚀 Lista de Apps Recomendados para Desktop
-- 💰 Guia de Compras: Como gastar pouco em teclado e mouse
+- 🚀 [Lista de Apps Recomendados para Desktop](./docs/lista-apps.md)
+- 💰 Guia de Compras: [Como gastar pouco em teclado e mouse](./docs/hardware-barato.md)
 
 ## 🤝 Contribuições
 
