@@ -69,6 +69,12 @@ Veja `contrib/como-contribuir.md`.
 
 ---
 
+## 🏛️ Para Instituições e Comunidades
+
+- 📄 [Carta de Proposta para Instituições](./docs/proposta-institucional.md)
+
+---
+
 ## 📜 Licença
 
 MIT License.
