@@ -1,5 +1,10 @@
 # 📱💻 Mobile to Desktop Kit
 
+![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-stable-success)
+![Open Source](https://img.shields.io/badge/open--source-yes-brightgreen)
+
 ## Transforme seu celular em um PC — Wireless First
 
 Projeto open-source que ensina como transformar **um celular em um computador funcional**, priorizando **espelhamento sem fio**, **baixo custo**, **alta compatibilidade** e **mínima taxa de falha**.
