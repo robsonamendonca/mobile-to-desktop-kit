@@ -1,6 +1,6 @@
 # 📱💻 Mobile to Desktop Kit
 
-![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![Version](https://img.shields.io/badge/version-v1.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-stable-success)
 ![Open Source](https://img.shields.io/badge/open--source-yes-brightgreen)
@@ -72,3 +72,4 @@ Veja `contrib/como-contribuir.md`.
 ## 📜 Licença
 
 MIT License.
+
