@@ -2,33 +2,59 @@ name: Update Version Badge
 
 on:
   release:
-    types: [published]
+    types: [published, edited]
 
 permissions:
   contents: write
 
 jobs:
-  update-badge:
+  update-readme:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get latest tag
-        id: tag
+      - name: Extract tag version
+        id: get_version
         run: |
-          TAG=${GITHUB_REF#refs/tags/}
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          VERSION=${GITHUB_REF#refs/tags/}
+          VERSION=${VERSION#v}  # Remove o 'v' se existir
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Tag: ${{ github.ref }} → Version: $VERSION"
 
-      - name: Update version badge in README
+      - name: Update version in README
         run: |
-          sed -i "s/version-v[0-9\\.]*-blue/version-${{ steps.tag.outputs.tag }}-blue/g" README.md
+          # Verifica padrões comuns de badges
+          if grep -q "shields.io/badge/version-" README.md; then
+            echo "🔄 Atualizando badge shields.io..."
+            sed -i.bak -E "s|(https://img\.shields\.io/badge/version-)[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z]+)|\\1${{ steps.get_version.outputs.version }}\\2|g" README.md
+          elif grep -q "badge/version-v" README.md; then
+            echo "🔄 Atualizando badge com 'v'..."
+            sed -i.bak "s|badge/version-v[0-9]*\.[0-9]*\.[0-9]*|badge/version-v${{ steps.get_version.outputs.version }}|g" README.md
+          else
+            echo "⚠️ Nenhum badge de versão encontrado no padrão esperado"
+            echo "📋 Procure no README por 'version-' e ajuste o regex acima"
+            exit 0
+          fi
+          
+          # Mostra diferenças
+          echo "📊 Mudanças:"
+          git diff README.md || true
 
-      - name: Commit changes
+      - name: Commit and push
+        if: success()
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore: update version badge to ${{ steps.tag.outputs.tag }}"
-          git push
+          
+          if git diff --cached --quiet; then
+            echo "✅ Nenhuma alteração necessária"
+          else
+            git commit -m "docs: update version badge to v${{ steps.get_version.outputs.version }}"
+            git push
+            echo "🚀 README atualizado com sucesso!"
+          fi
