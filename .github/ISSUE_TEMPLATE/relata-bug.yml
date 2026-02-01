@@ -1,0 +1,99 @@
+name: Relato de Problema
+description: Ajude-nos a melhorar reportando um problema
+title: "[BUG] - "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: "## 🐛 Relato de Problema\n\nObrigado por dedicar um tempo para relatar este problema! Preencha os campos abaixo para nos ajudar a entender e resolver mais rapidamente."
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: "📝 Descrição do Problema"
+      description: "Descreva claramente qual é o problema"
+      placeholder: "Exemplo: O espelhamento não funciona no meu TV Box X"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: "🔄 Como Reproduzir"
+      description: "Passos para reproduzir o problema"
+      placeholder: |
+        1. Passo 1
+        2. Passo 2
+        3. Passo 3
+    validations:
+      required: true
+
+  - type: input
+    id: dispositivo
+    attributes:
+      label: "📱 Dispositivo Móvel"
+      description: "Marca e modelo do celular/tablet"
+      placeholder: "Ex: Samsung Galaxy S23, iPhone 14 Pro"
+    validations:
+      required: true
+
+  - type: input
+    id: android
+    attributes:
+      label: "🤖 Sistema Operacional"
+      description: "Versão do Android/iOS"
+      placeholder: "Ex: Android 14, iOS 17"
+    validations:
+      required: true
+
+  - type: input
+    id: tela
+    attributes:
+      label: "📺 Dispositivo de Destino"
+      description: "Smart TV, TV Box, Monitor, etc."
+      placeholder: "Ex: Samsung Smart TV QLED 55', Mi TV Box"
+    validations:
+      required: true
+
+  - type: input
+    id: perifericos
+    attributes:
+      label: "🖱️ Periféricos Conectados"
+      description: "Teclado, mouse, controles, etc."
+      placeholder: "Ex: Mouse Logitech MX Master 3, Teclado Bluetooth"
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: "✅ Comportamento Esperado"
+      description: "O que deveria acontecer?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: atual
+    attributes:
+      label: "❌ Comportamento Atual"
+      description: "O que está acontecendo de errado?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📄 Logs/Evidências"
+      description: "Cole logs de erro, anexe screenshots ou vídeos se possível"
+      placeholder: "Cole logs aqui ou indique onde estão os anexos"
+
+  - type: textarea
+    id: sugestoes
+    attributes:
+      label: "💡 Sugestões de Solução"
+      description: "Tem alguma ideia de como resolver o problema? (Opcional)"
+      placeholder: "Se tiver alguma sugestão, compartilhe conosco!"
+
+  - type: markdown
+    attributes:
+      value: "---\n\n**🙏 Obrigado por ajudar a melhorar o Mobile to Desktop Kit!**"
