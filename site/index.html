@@ -1,209 +1,423 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile to Desktop Kit | Wireless‑First</title>
-  <meta name="description" content="Projeto open‑source para transformar qualquer celular em um computador funcional usando espelhamento wireless." />
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #020617;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(180deg, #020617, #0f172a);
-      color: var(--text);
-    }
-    header {
-      padding: 64px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 16px;
-    }
-    header p {
-      max-width: 720px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 1.1rem;
-    }
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 32px 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-    }
-    .card {
-      background: var(--card);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    .card h3 { margin-top: 0; }
-    section { margin-bottom: 64px; }
-    ul { padding-left: 20px; }
-    footer {
-      text-align: center;
-      padding: 32px 20px;
-      color: var(--muted);
-      font-size: .9rem;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 14px 24px;
-      background: var(--accent);
-      color: #020617;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile to Desktop Kit | Guia Educacional</title>
+  <meta
+    name="description"
+    content="Guia educacional open-source para transformar o celular em desktop com tutorial passo a passo, checklist e boas práticas."
+  >
+
+  <link rel="icon" type="image/svg+xml" href="assets/imagens/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
-<header>
-  <h1>Mobile to Desktop Kit</h1>
-  <p>Um projeto open‑source para transformar qualquer celular em um computador funcional, priorizando compatibilidade, baixo custo e espelhamento wireless.</p>
-  <a class="button" href="#guia">Ver Guia Oficial</a>
-</header>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="brand">
+          <img
+            src="assets/imagens/logo-mobile-to-desktop.svg"
+            alt="Mobile to Desktop Kit"
+            class="hero-logo"
+            loading="eager"
+            decoding="async"
+          >
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+            <span class="theme-toggle__label" data-theme-label>Tema</span>
+          </button>
+        </div>
 
-<main class="container">
+        <p class="eyebrow">Guia educacional open-source</p>
+        <h1>Mobile to Desktop Kit</h1>
+        <p class="lead">
+          Transforme qualquer smartphone em uma estação de estudo e trabalho com um tutorial
+          claro, acessível e sem dependência de marcas ou cabos proprietários.
+        </p>
 
-<section>
-  <h2>O Problema</h2>
-  <p>Milhões de pessoas possuem um celular funcional, mas continuam excluídas digitalmente por não terem acesso a um computador.</p>
-</section>
+        <div class="hero-actions">
+          <a href="#tutorial" class="btn primary">Começar tutorial</a>
+          <a
+            href="assets/pdf/mobile-to-desktop-kit-oficial.pdf"
+            class="btn ghost"
+            target="_blank"
+            rel="noopener"
+          >
+            Baixar guia PDF
+          </a>
+          <a
+            href="https://github.com/robsonamendonca/mobile-to-desktop-kit"
+            class="btn secondary"
+            target="_blank"
+            rel="noopener"
+          >
+            Ver GitHub
+          </a>
+        </div>
 
-<section class="grid">
-  <div class="card">
-    <h3>O que é o Kit</h3>
-    <p>Um conjunto mínimo de recursos e práticas para usar o celular como computador, sem depender de marcas ou modos proprietários.</p>
-  </div>
-  <div class="card">
-    <h3>Wireless‑First</h3>
-    <p>Espelhamento sem fio garante compatibilidade com mais de 80% dos dispositivos Android ativos.</p>
-  </div>
-  <div class="card">
-    <h3>Acessível</h3>
-    <p>Custo reduzido usando periféricos Bluetooth e telas já existentes.</p>
-  </div>
-</section>
+        <div class="hero-pills">
+          <span class="pill">Aprendizado prático</span>
+          <span class="pill">Baixo custo</span>
+          <span class="pill">Wireless-first</span>
+        </div>
+      </div>
 
-<section id="guia">
-  <h2>Checklist Oficial</h2>
-  <p>Tudo o que você precisa para transformar seu celular em um computador:</p>
-  
-  <div class="grid" style="margin-top: 24px;">
-    <div class="card">
-      <h4>📱 Celular</h4>
-      <ul style="margin: 0; padding-left: 16px;">
-        <li>Android 8+</li>
-        <li>Wi-Fi funcionando</li>
-        <li>Bluetooth ligado</li>
-      </ul>
+      <div class="hero-media">
+        <img
+          src="assets/imagens/header_top_mobile-desktop-kit.png"
+          alt="Ilustração do Mobile to Desktop Kit"
+          class="hero-image"
+          loading="eager"
+          decoding="async"
+        >
+        <div class="hero-card">
+          <h3>Você vai aprender</h3>
+          <ul>
+            <li>Selecionar equipamentos compatíveis.</li>
+            <li>Configurar espelhamento e periféricos.</li>
+            <li>Organizar um ambiente de estudo produtivo.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h4>📺 Tela</h4>
-      <ul style="margin: 0; padding-left: 16px;">
-        <li>Smart TV + Miracast</li>
-        <li>OU Monitor + TV Box</li>
-        <li>Qualquer resolução</li>
-      </ul>
+  </header>
+
+  <main id="conteudo">
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Por que existe</p>
+          <h2>Educação com o que já está na mão</h2>
+          <p>
+            Milhões de pessoas possuem um celular potente, mas não têm um computador disponível.
+            O Mobile to Desktop Kit ensina como reaproveitar o smartphone para estudar, trabalhar
+            e criar — com foco em inclusão digital e autonomia.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Resultados de aprendizagem</h3>
+          <ul class="checklist">
+            <li>Mapear as peças essenciais do kit.</li>
+            <li>Identificar o melhor tipo de conexão para cada ambiente.</li>
+            <li>Aplicar boas práticas de ergonomia e produtividade.</li>
+            <li>Documentar o processo para ensinar outras pessoas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tutorial" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Tutorial guiado</p>
+            <h2>Passo a passo para montar o seu kit</h2>
+          </div>
+          <p class="lead">
+            O fluxo abaixo transforma o celular em desktop de forma segura, replicável e fácil
+            de ensinar em aulas, oficinas ou projetos sociais.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step" data-step="1">
+            <h3>Prepare o ambiente</h3>
+            <p>
+              Separe um espaço estável, com boa iluminação e acesso à energia. Recomendamos
+              manter o carregador por perto para sessões longas.
+            </p>
+          </article>
+          <article class="step" data-step="2">
+            <h3>Conecte a tela</h3>
+            <p>
+              Priorize o espelhamento sem fio quando possível. Em monitores comuns, use TV Box ou
+              adaptadores compatíveis com seu dispositivo.
+            </p>
+          </article>
+          <article class="step" data-step="3">
+            <h3>Sincronize teclado e mouse</h3>
+            <p>
+              Pareie periféricos Bluetooth para ter precisão e agilidade. Caso use cabo, conecte
+              via hub OTG ou adaptadores equivalentes.
+            </p>
+          </article>
+          <article class="step" data-step="4">
+            <h3>Ajuste a experiência</h3>
+            <p>
+              Organize aplicativos de estudo, ative acessibilidade quando necessário e crie
+              atalhos para acelerar o fluxo de trabalho.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Guia visual</p>
+          <h2>Aprenda pelo exemplo</h2>
+          <p>
+            Use o kit visual para orientar alunos e participantes. O desenho abaixo ajuda a
+            explicar o conceito rapidamente e evita dúvidas sobre o que é essencial.
+          </p>
+          <div class="hero-actions">
+            <a href="#checklist" class="btn primary">Ver checklist</a>
+            <a
+              href="assets/pdf/mobile-to-desktop-kit-oficial.pdf"
+              class="btn ghost"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir guia completo
+            </a>
+          </div>
+        </div>
+        <figure class="media-card">
+          <img
+            src="assets/imagens/hero-mobile-desktop-kit.png"
+            alt="Ilustração do kit montado"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section id="checklist" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Checklist essencial</p>
+            <h2>O que você precisa para começar</h2>
+          </div>
+          <p class="lead">
+            Selecionamos apenas o necessário para garantir compatibilidade e baixa barreira de
+            entrada. Ajuste conforme seu contexto.
+          </p>
+        </div>
+
+        <div class="checklist-grid">
+          <div class="check-item">
+            <img src="assets/imagens/icons/phone.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Smartphone Android</h3>
+              <p>Modelo funcional com Wi-Fi e Bluetooth ativos.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <img src="assets/imagens/icons/monitor.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Monitor ou TV</h3>
+              <p>Qualquer tela com entrada HDMI ou suporte a Miracast.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <img src="assets/imagens/icons/cable.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Conexão</h3>
+              <p>Wireless-first, mas use adaptadores quando necessário.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <img src="assets/imagens/icons/keyboard.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Teclado</h3>
+              <p>Bluetooth ou USB com hub OTG.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <img src="assets/imagens/icons/mouse.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Mouse</h3>
+              <p>Qualquer modelo compatível com o celular.</p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="media-card wide">
+          <img
+            src="assets/imagens/checklist-visual.svg"
+            alt="Checklist visual do Mobile to Desktop Kit"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="media-card">
+          <img
+            src="assets/imagens/fluxo-uso.svg"
+            alt="Fluxo de configuração do kit"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="media-card__content">
+            <h3>Fluxo de configuração</h3>
+            <p>
+              Use este roteiro visual para explicar a sequência em treinamentos,
+              desde a conexão até o uso diário.
+            </p>
+          </div>
+        </div>
+        <div class="media-card">
+          <img
+            src="assets/imagens/arquitetura-kit.svg"
+            alt="Arquitetura do Mobile to Desktop Kit"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="media-card__content">
+            <h3>Arquitetura do kit</h3>
+            <p>
+              Mostra como os componentes se conectam e quais são as opções mais
+              comuns para cada cenário.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Boas práticas</p>
+            <h2>Ensine com segurança e conforto</h2>
+          </div>
+          <p class="lead">
+            Pequenos ajustes melhoram a experiência, aumentam a produtividade e
+            reduzem fadiga durante o estudo.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Ergonomia</h3>
+            <p>Posicione a tela na altura dos olhos e mantenha o teclado alinhado.</p>
+          </article>
+          <article class="card">
+            <h3>Energia</h3>
+            <p>Evite interrupções: mantenha o carregador próximo e use modo economia.</p>
+          </article>
+          <article class="card">
+            <h3>Organização</h3>
+            <p>Crie uma pasta com apps de estudo, leitura e produção de conteúdo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Materiais</p>
+            <h2>Downloads e recursos didáticos</h2>
+          </div>
+          <p class="lead">
+            Use o guia completo para aulas, apresentações e oficinas. Todo o material é
+            open-source e pronto para adaptar.
+          </p>
+        </div>
+
+        <div class="resources">
+          <article class="resource">
+            <h3>Guia completo em PDF</h3>
+            <p>Documento com detalhes técnicos e checklist expandido.</p>
+            <a
+              href="assets/pdf/mobile-to-desktop-kit-oficial.pdf"
+              target="_blank"
+              rel="noopener"
+              class="btn primary"
+            >
+              Abrir documento
+            </a>
+          </article>
+          <article class="resource">
+            <h3>Repositório no GitHub</h3>
+            <p>Contribua com melhorias, traduções e relatos de uso.</p>
+            <a
+              href="https://github.com/robsonamendonca/mobile-to-desktop-kit"
+              target="_blank"
+              rel="noopener"
+              class="btn ghost"
+            >
+              Contribuir
+            </a>
+          </article>
+          <article class="resource">
+            <h3>Compartilhe o projeto</h3>
+            <p>Ajude outras pessoas a aprender e ensinar com o kit.</p>
+            <a href="#conteudo" class="btn secondary">Divulgar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Perguntas frequentes</p>
+            <h2>Dúvidas comuns em oficinas</h2>
+          </div>
+          <p class="lead">
+            Respostas curtas para os pontos que mais aparecem em sala de aula.
+          </p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Funciona em qualquer celular?</summary>
+            <p>
+              Funciona melhor em Androids com Wi-Fi e Bluetooth ativos. Modelos muito antigos
+              podem ter limitações de espelhamento.
+            </p>
+          </details>
+          <details>
+            <summary>Preciso de internet?</summary>
+            <p>
+              Não para espelhar a tela, mas é recomendado ter conexão para estudo e colaboração.
+            </p>
+          </details>
+          <details>
+            <summary>É possível usar com cabo?</summary>
+            <p>
+              Sim. Use adaptadores compatíveis com seu smartphone e, se necessário, um hub OTG.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Mobile to Desktop Kit</h3>
+        <p>Projeto open-source para educação, inclusão digital e autonomia.</p>
+      </div>
+      <div class="footer-meta">
+        <span>Licença MIT</span>
+        <span>Robson Mendonça</span>
+        <span>Construído para compartilhar conhecimento</span>
+      </div>
     </div>
-    <div class="card">
-      <h4>🔌 Espelhamento</h4>
-      <ul style="margin: 0; padding-left: 16px;">
-        <li>Miracast nativo</li>
-        <li>OU AirScreen/LetsView</li>
-        <li>100% wireless</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h4>⌨️ Controle</h4>
-      <ul style="margin: 0; padding-left: 16px;">
-        <li>Teclado Bluetooth</li>
-        <li>Mouse Bluetooth</li>
-        <li>Qualquer marca</li>
-      </ul>
-    </div>
-  </div>
-  
-  <img src="assets/imagens/checklist-visual.svg" alt="Checklist Visual" style="max-width: 100%; margin-top: 32px; border-radius: 8px;">
-</section>
+  </footer>
 
-<section>
-  <h2>Arquitetura do Kit</h2>
-  <img src="assets/imagens/arquitetura-kit.svg" alt="Arquitetura do Kit" style="max-width: 100%; border-radius: 8px;">
-</section>
-
-<section>
-  <h2>Fluxo de Configuração</h2>
-  <img src="assets/imagens/fluxo-uso.svg" alt="Fluxo de Uso" style="max-width: 100%; border-radius: 8px;">
-</section>
-
-<section>
-  <h2>Manifesto</h2>
-  <p>Acesso à computação não deve ser privilégio. Wireless não é limitação, é escolha. Se alguém conseguiu estudar ou trabalhar usando apenas o celular, este projeto cumpriu seu papel.</p>
-</section>
-
-<section>
-  <h2>Downloads e Documentação</h2>
-  <div class="grid">
-    <div class="card" style="text-align: center;">
-      <h3>📕 Guia Completo - PDF</h3>
-      <p>Documento profissional mobile-to-desktop-kit.</p>
-      <a class="button" href="../assets/pdf/mobile-to-desktop-kit.pdf" target="_blank">
-        📖 Abrir Documento
-      </a>
-      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 12px;">
-        Otimizado para impressão
-      </p>
-    </div>
-    <div class="card" style="text-align: center;">
-      <h3>📄 Markdown Original</h3>
-      <p>Fonte do documento para editar e estender.</p>
-      <a class="button" href="../assets/pdf/mobile-to-desktop-kit-oficial.md" download>
-        ⬇️ Download Markdown
-      </a>
-      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 12px;">
-        Para conversão com Pandoc
-      </p>
-    </div>
-    <div class="card" style="text-align: center;">
-      <h3>🤝 Contribuir</h3>
-      <p>Ajude a melhorar o projeto testando e sugerindo melhorias.</p>
-      <a class="button" href="https://github.com/robsonamendonca/mobile-to-desktop-kit/blob/main/CONTRIBUTING.md" target="_blank">
-        👥 Como Contribuir
-      </a>
-      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 12px;">
-        Todos são bem-vindos!
-      </p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Open‑Source</h2>
-  <p>Este projeto é aberto, reutilizável e comunitário. Documentação, guias e materiais podem ser usados livremente.</p>
-</section>
-
-</main>
-
-<footer>
-  <p>Mobile to Desktop Kit — Projeto Open‑Source | Licença MIT</p>
-</footer>
-
+  <script src="assets/script.js"></script>
 </body>
 </html>

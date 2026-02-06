@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile to Desktop Kit | Wireless‑First</title>
+  <meta name="description" content="Projeto open‑source para transformar qualquer celular em um computador funcional usando espelhamento wireless." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+    }
+    header {
+      padding: 64px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    header p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .card h3 { margin-top: 0; }
+    section { margin-bottom: 64px; }
+    ul { padding-left: 20px; }
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 24px;
+      background: var(--accent);
+      color: #020617;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mobile to Desktop Kit</h1>
+  <p>Um projeto open‑source para transformar qualquer celular em um computador funcional, priorizando compatibilidade, baixo custo e espelhamento wireless.</p>
+  <a class="button" href="#guia">Ver Guia Oficial</a>
+</header>
+
+<main class="container">
+
+<section>
+  <h2>O Problema</h2>
+  <p>Milhões de pessoas possuem um celular funcional, mas continuam excluídas digitalmente por não terem acesso a um computador.</p>
+</section>
+
+<section class="grid">
+  <div class="card">
+    <h3>O que é o Kit</h3>
+    <p>Um conjunto mínimo de recursos e práticas para usar o celular como computador, sem depender de marcas ou modos proprietários.</p>
+  </div>
+  <div class="card">
+    <h3>Wireless‑First</h3>
+    <p>Espelhamento sem fio garante compatibilidade com mais de 80% dos dispositivos Android ativos.</p>
+  </div>
+  <div class="card">
+    <h3>Acessível</h3>
+    <p>Custo reduzido usando periféricos Bluetooth e telas já existentes.</p>
+  </div>
+</section>
+
+<section id="guia">
+  <h2>Checklist Oficial</h2>
+  <p>Tudo o que você precisa para transformar seu celular em um computador:</p>
+  
+  <div class="grid" style="margin-top: 24px;">
+    <div class="card">
+      <h4>📱 Celular</h4>
+      <ul style="margin: 0; padding-left: 16px;">
+        <li>Android 8+</li>
+        <li>Wi-Fi funcionando</li>
+        <li>Bluetooth ligado</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>📺 Tela</h4>
+      <ul style="margin: 0; padding-left: 16px;">
+        <li>Smart TV + Miracast</li>
+        <li>OU Monitor + TV Box</li>
+        <li>Qualquer resolução</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>🔌 Espelhamento</h4>
+      <ul style="margin: 0; padding-left: 16px;">
+        <li>Miracast nativo</li>
+        <li>OU AirScreen/LetsView</li>
+        <li>100% wireless</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>⌨️ Controle</h4>
+      <ul style="margin: 0; padding-left: 16px;">
+        <li>Teclado Bluetooth</li>
+        <li>Mouse Bluetooth</li>
+        <li>Qualquer marca</li>
+      </ul>
+    </div>
+  </div>
+  
+  <img src="assets/imagens/checklist-visual.svg" alt="Checklist Visual" style="max-width: 100%; margin-top: 32px; border-radius: 8px;">
+</section>
+
+<section>
+  <h2>Arquitetura do Kit</h2>
+  <img src="assets/imagens/arquitetura-kit.svg" alt="Arquitetura do Kit" style="max-width: 100%; border-radius: 8px;">
+</section>
+
+<section>
+  <h2>Fluxo de Configuração</h2>
+  <img src="assets/imagens/fluxo-uso.svg" alt="Fluxo de Uso" style="max-width: 100%; border-radius: 8px;">
+</section>
+
+<section>
+  <h2>Manifesto</h2>
+  <p>Acesso à computação não deve ser privilégio. Wireless não é limitação, é escolha. Se alguém conseguiu estudar ou trabalhar usando apenas o celular, este projeto cumpriu seu papel.</p>
+</section>
+
+<section>
+  <h2>Downloads e Documentação</h2>
+  <div class="grid">
+    <div class="card" style="text-align: center;">
+      <h3>📕 Guia Completo - PDF</h3>
+      <p>Documento profissional mobile-to-desktop-kit.</p>
+      <a class="button" href="../assets/pdf/mobile-to-desktop-kit.pdf" target="_blank">
+        📖 Abrir Documento
+      </a>
+      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 12px;">
+        Otimizado para impressão
+      </p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <h3>📄 Markdown Original</h3>
+      <p>Fonte do documento para editar e estender.</p>
+      <a class="button" href="../assets/pdf/mobile-to-desktop-kit-oficial.md" download>
+        ⬇️ Download Markdown
+      </a>
+      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 12px;">
+        Para conversão com Pandoc
+      </p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <h3>🤝 Contribuir</h3>
+      <p>Ajude a melhorar o projeto testando e sugerindo melhorias.</p>
+      <a class="button" href="https://github.com/robsonamendonca/mobile-to-desktop-kit/blob/main/CONTRIBUTING.md" target="_blank">
+        👥 Como Contribuir
+      </a>
+      <p style="font-size: 0.85rem; color: var(--muted); margin-top: 12px;">
+        Todos são bem-vindos!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Open‑Source</h2>
+  <p>Este projeto é aberto, reutilizável e comunitário. Documentação, guias e materiais podem ser usados livremente.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Mobile to Desktop Kit — Projeto Open‑Source | Licença MIT</p>
+</footer>
+
+</body>
+</html>

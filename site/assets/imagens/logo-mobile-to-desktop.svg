@@ -1,0 +1,43 @@
+<svg
+  width="160"
+  height="120"
+  viewBox="0 0 160 120"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Monitor -->
+  <rect
+    x="40"
+    y="10"
+    width="100"
+    height="60"
+    rx="6"
+    stroke="currentColor"
+    stroke-width="4"
+  />
+
+  <!-- Base do monitor -->
+  <line
+    x1="70"
+    y1="75"
+    x2="110"
+    y2="75"
+    stroke="currentColor"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <!-- Smartphone -->
+  <rect
+    x="10"
+    y="30"
+    width="26"
+    height="50"
+    rx="5"
+    stroke="currentColor"
+    stroke-width="4"
+  />
+
+  <!-- Botão -->
+  <circle cx="23" cy="74" r="2" fill="currentColor" />
+</svg>
