@@ -2,7 +2,7 @@
 
 ![Mobile to Desktop Kit](./site/assets/imagens/header_top_mobile-desktop-kit.png)
 
-![Version](https://img.shields.io/badge/version-v1.2.0-blue)
+![Version](https://img.shields.io/badge/version-v1.3.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-stable-success)
 ![Open Source](https://img.shields.io/badge/open--source-yes-brightgreen)
@@ -80,5 +80,6 @@ Veja `contrib/como-contribuir.md`.
 ## 📜 Licença
 
 MIT License.
+
 
 
