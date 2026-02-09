@@ -7,6 +7,21 @@ e o versionamento segue **Semantic Versioning (SemVer)**.
 
 ---
 
+## [1.3.0](https://github.com/robsonamendonca/mobile-to-desktop-kit/compare/v1.2.0...v1.3.0) (2026-02-06)
+
+
+### Features
+
+* Diagramação da Documentação oficial PDF ([c9868a4](https://github.com/robsonamendonca/mobile-to-desktop-kit/commit/c9868a4111a71ed9eddffb7267c4d456b8f8e381))
+* Diagramação da Documentação oficial PDF ([765c9c6](https://github.com/robsonamendonca/mobile-to-desktop-kit/commit/765c9c6fc0e7f292d7ad93e340623bef7ff4d880))
+
+## [1.2.0](https://github.com/robsonamendonca/mobile-to-desktop-kit/compare/v1.1.0...v1.2.0) (2026-02-06)
+
+
+### Features
+
+* repaginacao da home do projeto mais guiado, mais educativo. ([6e8b2a9](https://github.com/robsonamendonca/mobile-to-desktop-kit/commit/6e8b2a970a099fc3c921d946eddd415a5847bb6c))
+
 ## [1.1.0](https://github.com/robsonamendonca/mobile-to-desktop-kit/compare/v1.0.0...v1.1.0) (2026-02-01)
 
 
