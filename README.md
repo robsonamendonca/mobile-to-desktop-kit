@@ -63,6 +63,8 @@ Entre **R$ 60 e R$ 180**, dependendo do que a pessoa já possui.
 - 🛡️ Guia de Sobrevivência: [Primeiros passos após conectar](./docs/guia-sobrevivencia.md)
 - 🚀 [Lista de Apps Recomendados para Desktop](./docs/lista-apps.md)
 - 💰 Guia de Compras: [Como gastar pouco em teclado e mouse](./docs/hardware-barato.md)
+- 🎧 [Guia em aúdio:](https://www.youtube.com/watch?v=0I2bjauwszQ)
+- 📽️ [Guia em vídeo:](https://www.youtube.com/watch?v=5EKiciBNJrs)
 
 ## 🤝 Contribuições
 
@@ -80,6 +82,7 @@ Veja `contrib/como-contribuir.md`.
 ## 📜 Licença
 
 MIT License.
+
 
 
 
