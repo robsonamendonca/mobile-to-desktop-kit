@@ -83,6 +83,28 @@ Veja `contrib/como-contribuir.md`.
 
 MIT License.
 
+---
+
+## 👨‍💻 Autor
+
+<div align="center">
+
+**Robson Mendonça**
+
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/robsonamendonca)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/robsonamendonca)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@hdevinfo)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/robsonamendonca)
+
+</div>
+
+---
+
+<div align="center">
+
+**Por favor, considere dar uma estrela ⭐ se você gostou do projeto!**
+
+</div>
 
 
 
