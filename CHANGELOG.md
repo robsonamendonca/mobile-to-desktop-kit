@@ -7,6 +7,13 @@ e o versionamento segue **Semantic Versioning (SemVer)**.
 
 ---
 
+## [1.3.1](https://github.com/robsonamendonca/mobile-to-desktop-kit/compare/v1.3.0...v1.3.1) (2026-02-19)
+
+
+### Bug Fixes
+
+* content SEO. ([2dae40c](https://github.com/robsonamendonca/mobile-to-desktop-kit/commit/2dae40c7107fa0fa35d2419db670f0745aff9f07))
+
 ## [1.3.0](https://github.com/robsonamendonca/mobile-to-desktop-kit/compare/v1.2.0...v1.3.0) (2026-02-06)
 
 
